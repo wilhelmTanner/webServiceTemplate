@@ -1,0 +1,33 @@
+
+--detener todos los container
+docker container stop $(docker container ls -aq)
+
+--eliminar todos los container
+docker container rm $(docker container ls -aq)
+
+--eliminar todas las imagenes (por fuerza)
+docker rmi $(docker images -a -q) --force
+
+--acceder al sql server
+docker exec -it idsqlcontainer "bash"
+
+--luego, ejecutar
+/opt/mssql-tools/bin/sqlcmd -S localhost -U sa
+
+--ingresar password
+
+--luego revisar si creo bien la BD_EXAMPLE
+select name from sys.databases
+go
+
+--luego, usar la bd BD_EXAMPLE
+use DB_EXAMPLE
+go
+
+--luego, select sobre la tabla EXAMPLE
+select * from EXAMPLE
+go
+
+
+--para salir
+exit

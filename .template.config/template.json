@@ -1,0 +1,25 @@
+﻿{
+ "$schema": "http://json.schemastore.org/template",
+ "author": "Tanner Servicios Financieros",
+ "classifications": ["Tanner","Web/WebAPI","MVC","Razor Pages", "Web"],
+ "name": "Proyecto API REST .Net 6.0",
+ "identity": "Tanner.Templates.Api.CSharp",
+ "shortName": "tanner-template-api-net6",
+ "tags": {
+   "language": "C#",
+   "type": "project",
+   "vsmac-category": "other/net/general"
+ },
+ "sourceName": "Tanner.Template.Base",
+ "sources": [
+   {
+     "modifiers": [
+       {
+         "exclude": [
+           ".vs/**/*"
+         ]
+       }
+     ]
+   }
+ ]
+}

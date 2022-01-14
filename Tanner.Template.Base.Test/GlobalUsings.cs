@@ -1,0 +1,10 @@
+﻿global using Microsoft.AspNetCore.Mvc;
+global using Moq;
+global using System.Threading.Tasks;
+global using Tanner.Template.Base.API.Controllers;
+global using Tanner.Template.Base.Common.Interfaces.HttpClients;
+global using Tanner.Template.Base.Common.Interfaces.Repositories;
+global using Tanner.Template.Base.Common.Interfaces.Services;
+global using Tanner.Template.Base.Common.Models.Entities;
+global using Tanner.Template.Base.Service.Implementations;
+global using Xunit;

@@ -1,0 +1,15 @@
+﻿global using Microsoft.Extensions.Logging;
+global using Microsoft.Extensions.Options;
+global using System.Collections.Generic;
+global using System.Net.Http;
+global using System.Threading.Tasks;
+global using Tanner.Template.Base.Common;
+global using Tanner.Template.Base.Common.Configurations;
+global using Tanner.Template.Base.Common.Exceptions;
+global using Tanner.Template.Base.Common.Extensions;
+global using Tanner.Template.Base.Common.Interfaces.HttpClients;
+global using Tanner.Template.Base.Common.Interfaces.Repositories;
+global using Tanner.Template.Base.Common.Interfaces.Services;
+global using Tanner.Template.Base.Common.Models.Entities;
+global using Tanner.Template.Base.Common.Models.Requests;
+global using Tanner.Template.Base.Common.Models.Responses;
