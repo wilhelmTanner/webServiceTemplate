@@ -87,14 +87,13 @@ public partial class TemplateSQLRepository
 
         if (string.IsNullOrWhiteSpace(exampleObjectParameters.Sort))
             builder.OrderBy("Id asc");
+        else
+        {
+            var orderQuery = OrderQueryBuilder.CreateOrderQuery<ExampleObject>(exampleObjectParameters.Sort, OrderTypeEnum.Dapper);
 
-        var orderQuery = OrderQueryBuilder.CreateOrderQuery<ExampleObject>(exampleObjectParameters.Sort, OrderTypeEnum.Dapper);
-
-        if (string.IsNullOrWhiteSpace(orderQuery))
-            builder.OrderBy("Id asc");
-
-        builder.OrderBy(orderQuery);
-
+            builder.OrderBy(string.IsNullOrWhiteSpace(orderQuery) ? "Id asc" : orderQuery);
+        }
+        
         using var connection = new SqlConnection(this.GetConnectionString());
         var items = await connection.QueryAsync<ExampleObject>(selectTemplate.RawSql, selectTemplate.Parameters);
         var total = await connection.ExecuteScalarAsync<int>(countTemplate.RawSql, countTemplate.Parameters);
