@@ -9,7 +9,10 @@ services:
         dockerfile: mongodb-data/Dockerfile    
       ports:
       - 27017:27017
-      restart: unless-stopped
+      environment:
+        MONGO_INITDB_ROOT_USERNAME: usr_test
+        MONGO_INITDB_ROOT_PASSWORD: tanner    
+      command: ['--auth']
   sqlserver:
     image: mcr.microsoft.com/mssql/server
     container_name: sql
@@ -18,11 +21,14 @@ services:
       dockerfile: sql-data/Dockerfile    
     ports:
       - "1433:1433"
-  web-api:
-    build: .
-    container_name: template-webapi
-    ports: 
-      - "8081:80"      
-    depends_on: 
-      - sqlserver
-      - mongodb   
+    environment:
+        SA_PASSWORD: "Password123"
+        ACCEPT_EULA: "Y"
+  # web-api:
+  #   build: .
+  #   container_name: template-webapi
+  #   ports: 
+  #     - "8081:80"      
+  #   depends_on: 
+  #     - sqlserver
+  #     - mongodb   
