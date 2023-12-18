@@ -8,7 +8,7 @@ public class TemplateMongoRepository : ITemplateMongoRepository
         IOptions<MongoDbSettings> options)
     {
         var config = options.Value;
-
+          
         //var camelCaseConvention = new ConventionPack { new CamelCaseElementNameConvention() };
         //ConventionRegistry.Register("CamelCase", camelCaseConvention, _ => true);
 

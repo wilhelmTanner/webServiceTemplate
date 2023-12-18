@@ -26,6 +26,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Tanner.Template.Base.Common\Tanner.Template.Base.Common.csproj" />
+    <ProjectReference Include="..\Tanner.Template.Base.Models\Tanner.Template.Base.Models.csproj" />
     <ProjectReference Include="..\Tanner.Template.Base.Service\Tanner.Template.Base.Service.csproj" />
     <ProjectReference Include="..\Tanner.Template.Base.DataAccess\Tanner.Template.Base.DataAccess.csproj" />
   </ItemGroup>

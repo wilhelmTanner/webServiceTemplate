@@ -20,5 +20,10 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Tanner.Template.Base.Common\Tanner.Template.Base.Common.csproj" />
+    <ProjectReference Include="..\Tanner.Template.Base.Models\Tanner.Template.Base.Models.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Connected Services\" />
   </ItemGroup>
 </Project>

@@ -17,6 +17,7 @@ public static class ExceptionMiddlewareExtensions
             appError.Run(async context =>
             {
                 var contextFeature = context.Features.Get<IExceptionHandlerFeature>();
+
                 if (contextFeature != null)
                 {
                     var logger = loggerFactory.CreateLogger<ExceptionHandlerMiddleware>();

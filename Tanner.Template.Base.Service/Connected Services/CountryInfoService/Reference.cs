@@ -7,7 +7,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace CountryService
+namespace CountryInfoService
 {
     using System.Runtime.Serialization;
     
@@ -129,12 +129,12 @@ namespace CountryService
     public partial class tCountryCodeAndNameGroupedByContinent : object
     {
         
-        private CountryService.tContinent ContinentField;
+        private CountryInfoService.tContinent ContinentField;
         
-        private CountryService.tCountryCodeAndName[] CountryCodeAndNamesField;
+        private CountryInfoService.tCountryCodeAndName[] CountryCodeAndNamesField;
         
         [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true, EmitDefaultValue=false)]
-        public CountryService.tContinent Continent
+        public CountryInfoService.tContinent Continent
         {
             get
             {
@@ -147,7 +147,7 @@ namespace CountryService
         }
         
         [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true, EmitDefaultValue=false)]
-        public CountryService.tCountryCodeAndName[] CountryCodeAndNames
+        public CountryInfoService.tCountryCodeAndName[] CountryCodeAndNames
         {
             get
             {
@@ -180,7 +180,7 @@ namespace CountryService
         
         private string sCountryFlagField;
         
-        private CountryService.tLanguage[] LanguagesField;
+        private CountryInfoService.tLanguage[] LanguagesField;
         
         [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true, EmitDefaultValue=false)]
         public string sISOCode
@@ -274,7 +274,7 @@ namespace CountryService
         }
         
         [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true, EmitDefaultValue=false, Order=7)]
-        public CountryService.tLanguage[] Languages
+        public CountryInfoService.tLanguage[] Languages
         {
             get
             {
@@ -325,72 +325,72 @@ namespace CountryService
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
-    [System.ServiceModel.ServiceContractAttribute(Namespace="http://www.oorsprong.org/websamples.countryinfo", ConfigurationName="CountryService.CountryInfoServiceSoapType")]
+    [System.ServiceModel.ServiceContractAttribute(Namespace="http://www.oorsprong.org/websamples.countryinfo", ConfigurationName="CountryInfoService.CountryInfoServiceSoapType")]
     public interface CountryInfoServiceSoapType
     {
         
         [System.ServiceModel.OperationContractAttribute(Action="", ReplyAction="*")]
-        System.Threading.Tasks.Task<CountryService.ListOfContinentsByNameResponse> ListOfContinentsByNameAsync(CountryService.ListOfContinentsByNameRequest request);
+        System.Threading.Tasks.Task<CountryInfoService.ListOfContinentsByNameResponse> ListOfContinentsByNameAsync(CountryInfoService.ListOfContinentsByNameRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="", ReplyAction="*")]
-        System.Threading.Tasks.Task<CountryService.ListOfContinentsByCodeResponse> ListOfContinentsByCodeAsync(CountryService.ListOfContinentsByCodeRequest request);
+        System.Threading.Tasks.Task<CountryInfoService.ListOfContinentsByCodeResponse> ListOfContinentsByCodeAsync(CountryInfoService.ListOfContinentsByCodeRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="", ReplyAction="*")]
-        System.Threading.Tasks.Task<CountryService.ListOfCurrenciesByNameResponse> ListOfCurrenciesByNameAsync(CountryService.ListOfCurrenciesByNameRequest request);
+        System.Threading.Tasks.Task<CountryInfoService.ListOfCurrenciesByNameResponse> ListOfCurrenciesByNameAsync(CountryInfoService.ListOfCurrenciesByNameRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="", ReplyAction="*")]
-        System.Threading.Tasks.Task<CountryService.ListOfCurrenciesByCodeResponse> ListOfCurrenciesByCodeAsync(CountryService.ListOfCurrenciesByCodeRequest request);
+        System.Threading.Tasks.Task<CountryInfoService.ListOfCurrenciesByCodeResponse> ListOfCurrenciesByCodeAsync(CountryInfoService.ListOfCurrenciesByCodeRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="", ReplyAction="*")]
-        System.Threading.Tasks.Task<CountryService.CurrencyNameResponse> CurrencyNameAsync(CountryService.CurrencyNameRequest request);
+        System.Threading.Tasks.Task<CountryInfoService.CurrencyNameResponse> CurrencyNameAsync(CountryInfoService.CurrencyNameRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="", ReplyAction="*")]
-        System.Threading.Tasks.Task<CountryService.ListOfCountryNamesByCodeResponse> ListOfCountryNamesByCodeAsync(CountryService.ListOfCountryNamesByCodeRequest request);
+        System.Threading.Tasks.Task<CountryInfoService.ListOfCountryNamesByCodeResponse> ListOfCountryNamesByCodeAsync(CountryInfoService.ListOfCountryNamesByCodeRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="", ReplyAction="*")]
-        System.Threading.Tasks.Task<CountryService.ListOfCountryNamesByNameResponse> ListOfCountryNamesByNameAsync(CountryService.ListOfCountryNamesByNameRequest request);
+        System.Threading.Tasks.Task<CountryInfoService.ListOfCountryNamesByNameResponse> ListOfCountryNamesByNameAsync(CountryInfoService.ListOfCountryNamesByNameRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="", ReplyAction="*")]
-        System.Threading.Tasks.Task<CountryService.ListOfCountryNamesGroupedByContinentResponse> ListOfCountryNamesGroupedByContinentAsync(CountryService.ListOfCountryNamesGroupedByContinentRequest request);
+        System.Threading.Tasks.Task<CountryInfoService.ListOfCountryNamesGroupedByContinentResponse> ListOfCountryNamesGroupedByContinentAsync(CountryInfoService.ListOfCountryNamesGroupedByContinentRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="", ReplyAction="*")]
-        System.Threading.Tasks.Task<CountryService.CountryNameResponse> CountryNameAsync(CountryService.CountryNameRequest request);
+        System.Threading.Tasks.Task<CountryInfoService.CountryNameResponse> CountryNameAsync(CountryInfoService.CountryNameRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="", ReplyAction="*")]
-        System.Threading.Tasks.Task<CountryService.CountryISOCodeResponse> CountryISOCodeAsync(CountryService.CountryISOCodeRequest request);
+        System.Threading.Tasks.Task<CountryInfoService.CountryISOCodeResponse> CountryISOCodeAsync(CountryInfoService.CountryISOCodeRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="", ReplyAction="*")]
-        System.Threading.Tasks.Task<CountryService.CapitalCityResponse> CapitalCityAsync(CountryService.CapitalCityRequest request);
+        System.Threading.Tasks.Task<CountryInfoService.CapitalCityResponse> CapitalCityAsync(CountryInfoService.CapitalCityRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="", ReplyAction="*")]
-        System.Threading.Tasks.Task<CountryService.CountryCurrencyResponse> CountryCurrencyAsync(CountryService.CountryCurrencyRequest request);
+        System.Threading.Tasks.Task<CountryInfoService.CountryCurrencyResponse> CountryCurrencyAsync(CountryInfoService.CountryCurrencyRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="", ReplyAction="*")]
-        System.Threading.Tasks.Task<CountryService.CountryFlagResponse> CountryFlagAsync(CountryService.CountryFlagRequest request);
+        System.Threading.Tasks.Task<CountryInfoService.CountryFlagResponse> CountryFlagAsync(CountryInfoService.CountryFlagRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="", ReplyAction="*")]
-        System.Threading.Tasks.Task<CountryService.CountryIntPhoneCodeResponse> CountryIntPhoneCodeAsync(CountryService.CountryIntPhoneCodeRequest request);
+        System.Threading.Tasks.Task<CountryInfoService.CountryIntPhoneCodeResponse> CountryIntPhoneCodeAsync(CountryInfoService.CountryIntPhoneCodeRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="", ReplyAction="*")]
-        System.Threading.Tasks.Task<CountryService.FullCountryInfoResponse> FullCountryInfoAsync(CountryService.FullCountryInfoRequest request);
+        System.Threading.Tasks.Task<CountryInfoService.FullCountryInfoResponse> FullCountryInfoAsync(CountryInfoService.FullCountryInfoRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="", ReplyAction="*")]
-        System.Threading.Tasks.Task<CountryService.FullCountryInfoAllCountriesResponse> FullCountryInfoAllCountriesAsync(CountryService.FullCountryInfoAllCountriesRequest request);
+        System.Threading.Tasks.Task<CountryInfoService.FullCountryInfoAllCountriesResponse> FullCountryInfoAllCountriesAsync(CountryInfoService.FullCountryInfoAllCountriesRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="", ReplyAction="*")]
-        System.Threading.Tasks.Task<CountryService.CountriesUsingCurrencyResponse> CountriesUsingCurrencyAsync(CountryService.CountriesUsingCurrencyRequest request);
+        System.Threading.Tasks.Task<CountryInfoService.CountriesUsingCurrencyResponse> CountriesUsingCurrencyAsync(CountryInfoService.CountriesUsingCurrencyRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="", ReplyAction="*")]
-        System.Threading.Tasks.Task<CountryService.ListOfLanguagesByNameResponse> ListOfLanguagesByNameAsync(CountryService.ListOfLanguagesByNameRequest request);
+        System.Threading.Tasks.Task<CountryInfoService.ListOfLanguagesByNameResponse> ListOfLanguagesByNameAsync(CountryInfoService.ListOfLanguagesByNameRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="", ReplyAction="*")]
-        System.Threading.Tasks.Task<CountryService.ListOfLanguagesByCodeResponse> ListOfLanguagesByCodeAsync(CountryService.ListOfLanguagesByCodeRequest request);
+        System.Threading.Tasks.Task<CountryInfoService.ListOfLanguagesByCodeResponse> ListOfLanguagesByCodeAsync(CountryInfoService.ListOfLanguagesByCodeRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="", ReplyAction="*")]
-        System.Threading.Tasks.Task<CountryService.LanguageNameResponse> LanguageNameAsync(CountryService.LanguageNameRequest request);
+        System.Threading.Tasks.Task<CountryInfoService.LanguageNameResponse> LanguageNameAsync(CountryInfoService.LanguageNameRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="", ReplyAction="*")]
-        System.Threading.Tasks.Task<CountryService.LanguageISOCodeResponse> LanguageISOCodeAsync(CountryService.LanguageISOCodeRequest request);
+        System.Threading.Tasks.Task<CountryInfoService.LanguageISOCodeResponse> LanguageISOCodeAsync(CountryInfoService.LanguageISOCodeRequest request);
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
@@ -401,13 +401,13 @@ namespace CountryService
     {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Name="ListOfContinentsByName", Namespace="http://www.oorsprong.org/websamples.countryinfo", Order=0)]
-        public CountryService.ListOfContinentsByNameRequestBody Body;
+        public CountryInfoService.ListOfContinentsByNameRequestBody Body;
         
         public ListOfContinentsByNameRequest()
         {
         }
         
-        public ListOfContinentsByNameRequest(CountryService.ListOfContinentsByNameRequestBody Body)
+        public ListOfContinentsByNameRequest(CountryInfoService.ListOfContinentsByNameRequestBody Body)
         {
             this.Body = Body;
         }
@@ -433,13 +433,13 @@ namespace CountryService
     {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Name="ListOfContinentsByNameResponse", Namespace="http://www.oorsprong.org/websamples.countryinfo", Order=0)]
-        public CountryService.ListOfContinentsByNameResponseBody Body;
+        public CountryInfoService.ListOfContinentsByNameResponseBody Body;
         
         public ListOfContinentsByNameResponse()
         {
         }
         
-        public ListOfContinentsByNameResponse(CountryService.ListOfContinentsByNameResponseBody Body)
+        public ListOfContinentsByNameResponse(CountryInfoService.ListOfContinentsByNameResponseBody Body)
         {
             this.Body = Body;
         }
@@ -453,13 +453,13 @@ namespace CountryService
     {
         
         [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=0)]
-        public CountryService.tContinent[] ListOfContinentsByNameResult;
+        public CountryInfoService.tContinent[] ListOfContinentsByNameResult;
         
         public ListOfContinentsByNameResponseBody()
         {
         }
         
-        public ListOfContinentsByNameResponseBody(CountryService.tContinent[] ListOfContinentsByNameResult)
+        public ListOfContinentsByNameResponseBody(CountryInfoService.tContinent[] ListOfContinentsByNameResult)
         {
             this.ListOfContinentsByNameResult = ListOfContinentsByNameResult;
         }
@@ -473,13 +473,13 @@ namespace CountryService
     {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Name="ListOfContinentsByCode", Namespace="http://www.oorsprong.org/websamples.countryinfo", Order=0)]
-        public CountryService.ListOfContinentsByCodeRequestBody Body;
+        public CountryInfoService.ListOfContinentsByCodeRequestBody Body;
         
         public ListOfContinentsByCodeRequest()
         {
         }
         
-        public ListOfContinentsByCodeRequest(CountryService.ListOfContinentsByCodeRequestBody Body)
+        public ListOfContinentsByCodeRequest(CountryInfoService.ListOfContinentsByCodeRequestBody Body)
         {
             this.Body = Body;
         }
@@ -505,13 +505,13 @@ namespace CountryService
     {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Name="ListOfContinentsByCodeResponse", Namespace="http://www.oorsprong.org/websamples.countryinfo", Order=0)]
-        public CountryService.ListOfContinentsByCodeResponseBody Body;
+        public CountryInfoService.ListOfContinentsByCodeResponseBody Body;
         
         public ListOfContinentsByCodeResponse()
         {
         }
         
-        public ListOfContinentsByCodeResponse(CountryService.ListOfContinentsByCodeResponseBody Body)
+        public ListOfContinentsByCodeResponse(CountryInfoService.ListOfContinentsByCodeResponseBody Body)
         {
             this.Body = Body;
         }
@@ -525,13 +525,13 @@ namespace CountryService
     {
         
         [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=0)]
-        public CountryService.tContinent[] ListOfContinentsByCodeResult;
+        public CountryInfoService.tContinent[] ListOfContinentsByCodeResult;
         
         public ListOfContinentsByCodeResponseBody()
         {
         }
         
-        public ListOfContinentsByCodeResponseBody(CountryService.tContinent[] ListOfContinentsByCodeResult)
+        public ListOfContinentsByCodeResponseBody(CountryInfoService.tContinent[] ListOfContinentsByCodeResult)
         {
             this.ListOfContinentsByCodeResult = ListOfContinentsByCodeResult;
         }
@@ -545,13 +545,13 @@ namespace CountryService
     {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Name="ListOfCurrenciesByName", Namespace="http://www.oorsprong.org/websamples.countryinfo", Order=0)]
-        public CountryService.ListOfCurrenciesByNameRequestBody Body;
+        public CountryInfoService.ListOfCurrenciesByNameRequestBody Body;
         
         public ListOfCurrenciesByNameRequest()
         {
         }
         
-        public ListOfCurrenciesByNameRequest(CountryService.ListOfCurrenciesByNameRequestBody Body)
+        public ListOfCurrenciesByNameRequest(CountryInfoService.ListOfCurrenciesByNameRequestBody Body)
         {
             this.Body = Body;
         }
@@ -577,13 +577,13 @@ namespace CountryService
     {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Name="ListOfCurrenciesByNameResponse", Namespace="http://www.oorsprong.org/websamples.countryinfo", Order=0)]
-        public CountryService.ListOfCurrenciesByNameResponseBody Body;
+        public CountryInfoService.ListOfCurrenciesByNameResponseBody Body;
         
         public ListOfCurrenciesByNameResponse()
         {
         }
         
-        public ListOfCurrenciesByNameResponse(CountryService.ListOfCurrenciesByNameResponseBody Body)
+        public ListOfCurrenciesByNameResponse(CountryInfoService.ListOfCurrenciesByNameResponseBody Body)
         {
             this.Body = Body;
         }
@@ -597,13 +597,13 @@ namespace CountryService
     {
         
         [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=0)]
-        public CountryService.tCurrency[] ListOfCurrenciesByNameResult;
+        public CountryInfoService.tCurrency[] ListOfCurrenciesByNameResult;
         
         public ListOfCurrenciesByNameResponseBody()
         {
         }
         
-        public ListOfCurrenciesByNameResponseBody(CountryService.tCurrency[] ListOfCurrenciesByNameResult)
+        public ListOfCurrenciesByNameResponseBody(CountryInfoService.tCurrency[] ListOfCurrenciesByNameResult)
         {
             this.ListOfCurrenciesByNameResult = ListOfCurrenciesByNameResult;
         }
@@ -617,13 +617,13 @@ namespace CountryService
     {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Name="ListOfCurrenciesByCode", Namespace="http://www.oorsprong.org/websamples.countryinfo", Order=0)]
-        public CountryService.ListOfCurrenciesByCodeRequestBody Body;
+        public CountryInfoService.ListOfCurrenciesByCodeRequestBody Body;
         
         public ListOfCurrenciesByCodeRequest()
         {
         }
         
-        public ListOfCurrenciesByCodeRequest(CountryService.ListOfCurrenciesByCodeRequestBody Body)
+        public ListOfCurrenciesByCodeRequest(CountryInfoService.ListOfCurrenciesByCodeRequestBody Body)
         {
             this.Body = Body;
         }
@@ -649,13 +649,13 @@ namespace CountryService
     {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Name="ListOfCurrenciesByCodeResponse", Namespace="http://www.oorsprong.org/websamples.countryinfo", Order=0)]
-        public CountryService.ListOfCurrenciesByCodeResponseBody Body;
+        public CountryInfoService.ListOfCurrenciesByCodeResponseBody Body;
         
         public ListOfCurrenciesByCodeResponse()
         {
         }
         
-        public ListOfCurrenciesByCodeResponse(CountryService.ListOfCurrenciesByCodeResponseBody Body)
+        public ListOfCurrenciesByCodeResponse(CountryInfoService.ListOfCurrenciesByCodeResponseBody Body)
         {
             this.Body = Body;
         }
@@ -669,13 +669,13 @@ namespace CountryService
     {
         
         [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=0)]
-        public CountryService.tCurrency[] ListOfCurrenciesByCodeResult;
+        public CountryInfoService.tCurrency[] ListOfCurrenciesByCodeResult;
         
         public ListOfCurrenciesByCodeResponseBody()
         {
         }
         
-        public ListOfCurrenciesByCodeResponseBody(CountryService.tCurrency[] ListOfCurrenciesByCodeResult)
+        public ListOfCurrenciesByCodeResponseBody(CountryInfoService.tCurrency[] ListOfCurrenciesByCodeResult)
         {
             this.ListOfCurrenciesByCodeResult = ListOfCurrenciesByCodeResult;
         }
@@ -689,13 +689,13 @@ namespace CountryService
     {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Name="CurrencyName", Namespace="http://www.oorsprong.org/websamples.countryinfo", Order=0)]
-        public CountryService.CurrencyNameRequestBody Body;
+        public CountryInfoService.CurrencyNameRequestBody Body;
         
         public CurrencyNameRequest()
         {
         }
         
-        public CurrencyNameRequest(CountryService.CurrencyNameRequestBody Body)
+        public CurrencyNameRequest(CountryInfoService.CurrencyNameRequestBody Body)
         {
             this.Body = Body;
         }
@@ -729,13 +729,13 @@ namespace CountryService
     {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Name="CurrencyNameResponse", Namespace="http://www.oorsprong.org/websamples.countryinfo", Order=0)]
-        public CountryService.CurrencyNameResponseBody Body;
+        public CountryInfoService.CurrencyNameResponseBody Body;
         
         public CurrencyNameResponse()
         {
         }
         
-        public CurrencyNameResponse(CountryService.CurrencyNameResponseBody Body)
+        public CurrencyNameResponse(CountryInfoService.CurrencyNameResponseBody Body)
         {
             this.Body = Body;
         }
@@ -769,13 +769,13 @@ namespace CountryService
     {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Name="ListOfCountryNamesByCode", Namespace="http://www.oorsprong.org/websamples.countryinfo", Order=0)]
-        public CountryService.ListOfCountryNamesByCodeRequestBody Body;
+        public CountryInfoService.ListOfCountryNamesByCodeRequestBody Body;
         
         public ListOfCountryNamesByCodeRequest()
         {
         }
         
-        public ListOfCountryNamesByCodeRequest(CountryService.ListOfCountryNamesByCodeRequestBody Body)
+        public ListOfCountryNamesByCodeRequest(CountryInfoService.ListOfCountryNamesByCodeRequestBody Body)
         {
             this.Body = Body;
         }
@@ -801,13 +801,13 @@ namespace CountryService
     {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Name="ListOfCountryNamesByCodeResponse", Namespace="http://www.oorsprong.org/websamples.countryinfo", Order=0)]
-        public CountryService.ListOfCountryNamesByCodeResponseBody Body;
+        public CountryInfoService.ListOfCountryNamesByCodeResponseBody Body;
         
         public ListOfCountryNamesByCodeResponse()
         {
         }
         
-        public ListOfCountryNamesByCodeResponse(CountryService.ListOfCountryNamesByCodeResponseBody Body)
+        public ListOfCountryNamesByCodeResponse(CountryInfoService.ListOfCountryNamesByCodeResponseBody Body)
         {
             this.Body = Body;
         }
@@ -821,13 +821,13 @@ namespace CountryService
     {
         
         [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=0)]
-        public CountryService.tCountryCodeAndName[] ListOfCountryNamesByCodeResult;
+        public CountryInfoService.tCountryCodeAndName[] ListOfCountryNamesByCodeResult;
         
         public ListOfCountryNamesByCodeResponseBody()
         {
         }
         
-        public ListOfCountryNamesByCodeResponseBody(CountryService.tCountryCodeAndName[] ListOfCountryNamesByCodeResult)
+        public ListOfCountryNamesByCodeResponseBody(CountryInfoService.tCountryCodeAndName[] ListOfCountryNamesByCodeResult)
         {
             this.ListOfCountryNamesByCodeResult = ListOfCountryNamesByCodeResult;
         }
@@ -841,13 +841,13 @@ namespace CountryService
     {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Name="ListOfCountryNamesByName", Namespace="http://www.oorsprong.org/websamples.countryinfo", Order=0)]
-        public CountryService.ListOfCountryNamesByNameRequestBody Body;
+        public CountryInfoService.ListOfCountryNamesByNameRequestBody Body;
         
         public ListOfCountryNamesByNameRequest()
         {
         }
         
-        public ListOfCountryNamesByNameRequest(CountryService.ListOfCountryNamesByNameRequestBody Body)
+        public ListOfCountryNamesByNameRequest(CountryInfoService.ListOfCountryNamesByNameRequestBody Body)
         {
             this.Body = Body;
         }
@@ -873,13 +873,13 @@ namespace CountryService
     {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Name="ListOfCountryNamesByNameResponse", Namespace="http://www.oorsprong.org/websamples.countryinfo", Order=0)]
-        public CountryService.ListOfCountryNamesByNameResponseBody Body;
+        public CountryInfoService.ListOfCountryNamesByNameResponseBody Body;
         
         public ListOfCountryNamesByNameResponse()
         {
         }
         
-        public ListOfCountryNamesByNameResponse(CountryService.ListOfCountryNamesByNameResponseBody Body)
+        public ListOfCountryNamesByNameResponse(CountryInfoService.ListOfCountryNamesByNameResponseBody Body)
         {
             this.Body = Body;
         }
@@ -893,13 +893,13 @@ namespace CountryService
     {
         
         [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=0)]
-        public CountryService.tCountryCodeAndName[] ListOfCountryNamesByNameResult;
+        public CountryInfoService.tCountryCodeAndName[] ListOfCountryNamesByNameResult;
         
         public ListOfCountryNamesByNameResponseBody()
         {
         }
         
-        public ListOfCountryNamesByNameResponseBody(CountryService.tCountryCodeAndName[] ListOfCountryNamesByNameResult)
+        public ListOfCountryNamesByNameResponseBody(CountryInfoService.tCountryCodeAndName[] ListOfCountryNamesByNameResult)
         {
             this.ListOfCountryNamesByNameResult = ListOfCountryNamesByNameResult;
         }
@@ -913,13 +913,13 @@ namespace CountryService
     {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Name="ListOfCountryNamesGroupedByContinent", Namespace="http://www.oorsprong.org/websamples.countryinfo", Order=0)]
-        public CountryService.ListOfCountryNamesGroupedByContinentRequestBody Body;
+        public CountryInfoService.ListOfCountryNamesGroupedByContinentRequestBody Body;
         
         public ListOfCountryNamesGroupedByContinentRequest()
         {
         }
         
-        public ListOfCountryNamesGroupedByContinentRequest(CountryService.ListOfCountryNamesGroupedByContinentRequestBody Body)
+        public ListOfCountryNamesGroupedByContinentRequest(CountryInfoService.ListOfCountryNamesGroupedByContinentRequestBody Body)
         {
             this.Body = Body;
         }
@@ -945,13 +945,13 @@ namespace CountryService
     {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Name="ListOfCountryNamesGroupedByContinentResponse", Namespace="http://www.oorsprong.org/websamples.countryinfo", Order=0)]
-        public CountryService.ListOfCountryNamesGroupedByContinentResponseBody Body;
+        public CountryInfoService.ListOfCountryNamesGroupedByContinentResponseBody Body;
         
         public ListOfCountryNamesGroupedByContinentResponse()
         {
         }
         
-        public ListOfCountryNamesGroupedByContinentResponse(CountryService.ListOfCountryNamesGroupedByContinentResponseBody Body)
+        public ListOfCountryNamesGroupedByContinentResponse(CountryInfoService.ListOfCountryNamesGroupedByContinentResponseBody Body)
         {
             this.Body = Body;
         }
@@ -965,13 +965,13 @@ namespace CountryService
     {
         
         [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=0)]
-        public CountryService.tCountryCodeAndNameGroupedByContinent[] ListOfCountryNamesGroupedByContinentResult;
+        public CountryInfoService.tCountryCodeAndNameGroupedByContinent[] ListOfCountryNamesGroupedByContinentResult;
         
         public ListOfCountryNamesGroupedByContinentResponseBody()
         {
         }
         
-        public ListOfCountryNamesGroupedByContinentResponseBody(CountryService.tCountryCodeAndNameGroupedByContinent[] ListOfCountryNamesGroupedByContinentResult)
+        public ListOfCountryNamesGroupedByContinentResponseBody(CountryInfoService.tCountryCodeAndNameGroupedByContinent[] ListOfCountryNamesGroupedByContinentResult)
         {
             this.ListOfCountryNamesGroupedByContinentResult = ListOfCountryNamesGroupedByContinentResult;
         }
@@ -985,13 +985,13 @@ namespace CountryService
     {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Name="CountryName", Namespace="http://www.oorsprong.org/websamples.countryinfo", Order=0)]
-        public CountryService.CountryNameRequestBody Body;
+        public CountryInfoService.CountryNameRequestBody Body;
         
         public CountryNameRequest()
         {
         }
         
-        public CountryNameRequest(CountryService.CountryNameRequestBody Body)
+        public CountryNameRequest(CountryInfoService.CountryNameRequestBody Body)
         {
             this.Body = Body;
         }
@@ -1025,13 +1025,13 @@ namespace CountryService
     {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Name="CountryNameResponse", Namespace="http://www.oorsprong.org/websamples.countryinfo", Order=0)]
-        public CountryService.CountryNameResponseBody Body;
+        public CountryInfoService.CountryNameResponseBody Body;
         
         public CountryNameResponse()
         {
         }
         
-        public CountryNameResponse(CountryService.CountryNameResponseBody Body)
+        public CountryNameResponse(CountryInfoService.CountryNameResponseBody Body)
         {
             this.Body = Body;
         }
@@ -1065,13 +1065,13 @@ namespace CountryService
     {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Name="CountryISOCode", Namespace="http://www.oorsprong.org/websamples.countryinfo", Order=0)]
-        public CountryService.CountryISOCodeRequestBody Body;
+        public CountryInfoService.CountryISOCodeRequestBody Body;
         
         public CountryISOCodeRequest()
         {
         }
         
-        public CountryISOCodeRequest(CountryService.CountryISOCodeRequestBody Body)
+        public CountryISOCodeRequest(CountryInfoService.CountryISOCodeRequestBody Body)
         {
             this.Body = Body;
         }
@@ -1105,13 +1105,13 @@ namespace CountryService
     {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Name="CountryISOCodeResponse", Namespace="http://www.oorsprong.org/websamples.countryinfo", Order=0)]
-        public CountryService.CountryISOCodeResponseBody Body;
+        public CountryInfoService.CountryISOCodeResponseBody Body;
         
         public CountryISOCodeResponse()
         {
         }
         
-        public CountryISOCodeResponse(CountryService.CountryISOCodeResponseBody Body)
+        public CountryISOCodeResponse(CountryInfoService.CountryISOCodeResponseBody Body)
         {
             this.Body = Body;
         }
@@ -1145,13 +1145,13 @@ namespace CountryService
     {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Name="CapitalCity", Namespace="http://www.oorsprong.org/websamples.countryinfo", Order=0)]
-        public CountryService.CapitalCityRequestBody Body;
+        public CountryInfoService.CapitalCityRequestBody Body;
         
         public CapitalCityRequest()
         {
         }
         
-        public CapitalCityRequest(CountryService.CapitalCityRequestBody Body)
+        public CapitalCityRequest(CountryInfoService.CapitalCityRequestBody Body)
         {
             this.Body = Body;
         }
@@ -1185,13 +1185,13 @@ namespace CountryService
     {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Name="CapitalCityResponse", Namespace="http://www.oorsprong.org/websamples.countryinfo", Order=0)]
-        public CountryService.CapitalCityResponseBody Body;
+        public CountryInfoService.CapitalCityResponseBody Body;
         
         public CapitalCityResponse()
         {
         }
         
-        public CapitalCityResponse(CountryService.CapitalCityResponseBody Body)
+        public CapitalCityResponse(CountryInfoService.CapitalCityResponseBody Body)
         {
             this.Body = Body;
         }
@@ -1225,13 +1225,13 @@ namespace CountryService
     {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Name="CountryCurrency", Namespace="http://www.oorsprong.org/websamples.countryinfo", Order=0)]
-        public CountryService.CountryCurrencyRequestBody Body;
+        public CountryInfoService.CountryCurrencyRequestBody Body;
         
         public CountryCurrencyRequest()
         {
         }
         
-        public CountryCurrencyRequest(CountryService.CountryCurrencyRequestBody Body)
+        public CountryCurrencyRequest(CountryInfoService.CountryCurrencyRequestBody Body)
         {
             this.Body = Body;
         }
@@ -1265,13 +1265,13 @@ namespace CountryService
     {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Name="CountryCurrencyResponse", Namespace="http://www.oorsprong.org/websamples.countryinfo", Order=0)]
-        public CountryService.CountryCurrencyResponseBody Body;
+        public CountryInfoService.CountryCurrencyResponseBody Body;
         
         public CountryCurrencyResponse()
         {
         }
         
-        public CountryCurrencyResponse(CountryService.CountryCurrencyResponseBody Body)
+        public CountryCurrencyResponse(CountryInfoService.CountryCurrencyResponseBody Body)
         {
             this.Body = Body;
         }
@@ -1285,13 +1285,13 @@ namespace CountryService
     {
         
         [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=0)]
-        public CountryService.tCurrency CountryCurrencyResult;
+        public CountryInfoService.tCurrency CountryCurrencyResult;
         
         public CountryCurrencyResponseBody()
         {
         }
         
-        public CountryCurrencyResponseBody(CountryService.tCurrency CountryCurrencyResult)
+        public CountryCurrencyResponseBody(CountryInfoService.tCurrency CountryCurrencyResult)
         {
             this.CountryCurrencyResult = CountryCurrencyResult;
         }
@@ -1305,13 +1305,13 @@ namespace CountryService
     {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Name="CountryFlag", Namespace="http://www.oorsprong.org/websamples.countryinfo", Order=0)]
-        public CountryService.CountryFlagRequestBody Body;
+        public CountryInfoService.CountryFlagRequestBody Body;
         
         public CountryFlagRequest()
         {
         }
         
-        public CountryFlagRequest(CountryService.CountryFlagRequestBody Body)
+        public CountryFlagRequest(CountryInfoService.CountryFlagRequestBody Body)
         {
             this.Body = Body;
         }
@@ -1345,13 +1345,13 @@ namespace CountryService
     {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Name="CountryFlagResponse", Namespace="http://www.oorsprong.org/websamples.countryinfo", Order=0)]
-        public CountryService.CountryFlagResponseBody Body;
+        public CountryInfoService.CountryFlagResponseBody Body;
         
         public CountryFlagResponse()
         {
         }
         
-        public CountryFlagResponse(CountryService.CountryFlagResponseBody Body)
+        public CountryFlagResponse(CountryInfoService.CountryFlagResponseBody Body)
         {
             this.Body = Body;
         }
@@ -1385,13 +1385,13 @@ namespace CountryService
     {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Name="CountryIntPhoneCode", Namespace="http://www.oorsprong.org/websamples.countryinfo", Order=0)]
-        public CountryService.CountryIntPhoneCodeRequestBody Body;
+        public CountryInfoService.CountryIntPhoneCodeRequestBody Body;
         
         public CountryIntPhoneCodeRequest()
         {
         }
         
-        public CountryIntPhoneCodeRequest(CountryService.CountryIntPhoneCodeRequestBody Body)
+        public CountryIntPhoneCodeRequest(CountryInfoService.CountryIntPhoneCodeRequestBody Body)
         {
             this.Body = Body;
         }
@@ -1425,13 +1425,13 @@ namespace CountryService
     {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Name="CountryIntPhoneCodeResponse", Namespace="http://www.oorsprong.org/websamples.countryinfo", Order=0)]
-        public CountryService.CountryIntPhoneCodeResponseBody Body;
+        public CountryInfoService.CountryIntPhoneCodeResponseBody Body;
         
         public CountryIntPhoneCodeResponse()
         {
         }
         
-        public CountryIntPhoneCodeResponse(CountryService.CountryIntPhoneCodeResponseBody Body)
+        public CountryIntPhoneCodeResponse(CountryInfoService.CountryIntPhoneCodeResponseBody Body)
         {
             this.Body = Body;
         }
@@ -1465,13 +1465,13 @@ namespace CountryService
     {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Name="FullCountryInfo", Namespace="http://www.oorsprong.org/websamples.countryinfo", Order=0)]
-        public CountryService.FullCountryInfoRequestBody Body;
+        public CountryInfoService.FullCountryInfoRequestBody Body;
         
         public FullCountryInfoRequest()
         {
         }
         
-        public FullCountryInfoRequest(CountryService.FullCountryInfoRequestBody Body)
+        public FullCountryInfoRequest(CountryInfoService.FullCountryInfoRequestBody Body)
         {
             this.Body = Body;
         }
@@ -1505,13 +1505,13 @@ namespace CountryService
     {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Name="FullCountryInfoResponse", Namespace="http://www.oorsprong.org/websamples.countryinfo", Order=0)]
-        public CountryService.FullCountryInfoResponseBody Body;
+        public CountryInfoService.FullCountryInfoResponseBody Body;
         
         public FullCountryInfoResponse()
         {
         }
         
-        public FullCountryInfoResponse(CountryService.FullCountryInfoResponseBody Body)
+        public FullCountryInfoResponse(CountryInfoService.FullCountryInfoResponseBody Body)
         {
             this.Body = Body;
         }
@@ -1525,13 +1525,13 @@ namespace CountryService
     {
         
         [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=0)]
-        public CountryService.tCountryInfo FullCountryInfoResult;
+        public CountryInfoService.tCountryInfo FullCountryInfoResult;
         
         public FullCountryInfoResponseBody()
         {
         }
         
-        public FullCountryInfoResponseBody(CountryService.tCountryInfo FullCountryInfoResult)
+        public FullCountryInfoResponseBody(CountryInfoService.tCountryInfo FullCountryInfoResult)
         {
             this.FullCountryInfoResult = FullCountryInfoResult;
         }
@@ -1545,13 +1545,13 @@ namespace CountryService
     {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Name="FullCountryInfoAllCountries", Namespace="http://www.oorsprong.org/websamples.countryinfo", Order=0)]
-        public CountryService.FullCountryInfoAllCountriesRequestBody Body;
+        public CountryInfoService.FullCountryInfoAllCountriesRequestBody Body;
         
         public FullCountryInfoAllCountriesRequest()
         {
         }
         
-        public FullCountryInfoAllCountriesRequest(CountryService.FullCountryInfoAllCountriesRequestBody Body)
+        public FullCountryInfoAllCountriesRequest(CountryInfoService.FullCountryInfoAllCountriesRequestBody Body)
         {
             this.Body = Body;
         }
@@ -1577,13 +1577,13 @@ namespace CountryService
     {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Name="FullCountryInfoAllCountriesResponse", Namespace="http://www.oorsprong.org/websamples.countryinfo", Order=0)]
-        public CountryService.FullCountryInfoAllCountriesResponseBody Body;
+        public CountryInfoService.FullCountryInfoAllCountriesResponseBody Body;
         
         public FullCountryInfoAllCountriesResponse()
         {
         }
         
-        public FullCountryInfoAllCountriesResponse(CountryService.FullCountryInfoAllCountriesResponseBody Body)
+        public FullCountryInfoAllCountriesResponse(CountryInfoService.FullCountryInfoAllCountriesResponseBody Body)
         {
             this.Body = Body;
         }
@@ -1597,13 +1597,13 @@ namespace CountryService
     {
         
         [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=0)]
-        public CountryService.tCountryInfo[] FullCountryInfoAllCountriesResult;
+        public CountryInfoService.tCountryInfo[] FullCountryInfoAllCountriesResult;
         
         public FullCountryInfoAllCountriesResponseBody()
         {
         }
         
-        public FullCountryInfoAllCountriesResponseBody(CountryService.tCountryInfo[] FullCountryInfoAllCountriesResult)
+        public FullCountryInfoAllCountriesResponseBody(CountryInfoService.tCountryInfo[] FullCountryInfoAllCountriesResult)
         {
             this.FullCountryInfoAllCountriesResult = FullCountryInfoAllCountriesResult;
         }
@@ -1617,13 +1617,13 @@ namespace CountryService
     {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Name="CountriesUsingCurrency", Namespace="http://www.oorsprong.org/websamples.countryinfo", Order=0)]
-        public CountryService.CountriesUsingCurrencyRequestBody Body;
+        public CountryInfoService.CountriesUsingCurrencyRequestBody Body;
         
         public CountriesUsingCurrencyRequest()
         {
         }
         
-        public CountriesUsingCurrencyRequest(CountryService.CountriesUsingCurrencyRequestBody Body)
+        public CountriesUsingCurrencyRequest(CountryInfoService.CountriesUsingCurrencyRequestBody Body)
         {
             this.Body = Body;
         }
@@ -1657,13 +1657,13 @@ namespace CountryService
     {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Name="CountriesUsingCurrencyResponse", Namespace="http://www.oorsprong.org/websamples.countryinfo", Order=0)]
-        public CountryService.CountriesUsingCurrencyResponseBody Body;
+        public CountryInfoService.CountriesUsingCurrencyResponseBody Body;
         
         public CountriesUsingCurrencyResponse()
         {
         }
         
-        public CountriesUsingCurrencyResponse(CountryService.CountriesUsingCurrencyResponseBody Body)
+        public CountriesUsingCurrencyResponse(CountryInfoService.CountriesUsingCurrencyResponseBody Body)
         {
             this.Body = Body;
         }
@@ -1677,13 +1677,13 @@ namespace CountryService
     {
         
         [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=0)]
-        public CountryService.tCountryCodeAndName[] CountriesUsingCurrencyResult;
+        public CountryInfoService.tCountryCodeAndName[] CountriesUsingCurrencyResult;
         
         public CountriesUsingCurrencyResponseBody()
         {
         }
         
-        public CountriesUsingCurrencyResponseBody(CountryService.tCountryCodeAndName[] CountriesUsingCurrencyResult)
+        public CountriesUsingCurrencyResponseBody(CountryInfoService.tCountryCodeAndName[] CountriesUsingCurrencyResult)
         {
             this.CountriesUsingCurrencyResult = CountriesUsingCurrencyResult;
         }
@@ -1697,13 +1697,13 @@ namespace CountryService
     {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Name="ListOfLanguagesByName", Namespace="http://www.oorsprong.org/websamples.countryinfo", Order=0)]
-        public CountryService.ListOfLanguagesByNameRequestBody Body;
+        public CountryInfoService.ListOfLanguagesByNameRequestBody Body;
         
         public ListOfLanguagesByNameRequest()
         {
         }
         
-        public ListOfLanguagesByNameRequest(CountryService.ListOfLanguagesByNameRequestBody Body)
+        public ListOfLanguagesByNameRequest(CountryInfoService.ListOfLanguagesByNameRequestBody Body)
         {
             this.Body = Body;
         }
@@ -1729,13 +1729,13 @@ namespace CountryService
     {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Name="ListOfLanguagesByNameResponse", Namespace="http://www.oorsprong.org/websamples.countryinfo", Order=0)]
-        public CountryService.ListOfLanguagesByNameResponseBody Body;
+        public CountryInfoService.ListOfLanguagesByNameResponseBody Body;
         
         public ListOfLanguagesByNameResponse()
         {
         }
         
-        public ListOfLanguagesByNameResponse(CountryService.ListOfLanguagesByNameResponseBody Body)
+        public ListOfLanguagesByNameResponse(CountryInfoService.ListOfLanguagesByNameResponseBody Body)
         {
             this.Body = Body;
         }
@@ -1749,13 +1749,13 @@ namespace CountryService
     {
         
         [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=0)]
-        public CountryService.tLanguage[] ListOfLanguagesByNameResult;
+        public CountryInfoService.tLanguage[] ListOfLanguagesByNameResult;
         
         public ListOfLanguagesByNameResponseBody()
         {
         }
         
-        public ListOfLanguagesByNameResponseBody(CountryService.tLanguage[] ListOfLanguagesByNameResult)
+        public ListOfLanguagesByNameResponseBody(CountryInfoService.tLanguage[] ListOfLanguagesByNameResult)
         {
             this.ListOfLanguagesByNameResult = ListOfLanguagesByNameResult;
         }
@@ -1769,13 +1769,13 @@ namespace CountryService
     {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Name="ListOfLanguagesByCode", Namespace="http://www.oorsprong.org/websamples.countryinfo", Order=0)]
-        public CountryService.ListOfLanguagesByCodeRequestBody Body;
+        public CountryInfoService.ListOfLanguagesByCodeRequestBody Body;
         
         public ListOfLanguagesByCodeRequest()
         {
         }
         
-        public ListOfLanguagesByCodeRequest(CountryService.ListOfLanguagesByCodeRequestBody Body)
+        public ListOfLanguagesByCodeRequest(CountryInfoService.ListOfLanguagesByCodeRequestBody Body)
         {
             this.Body = Body;
         }
@@ -1801,13 +1801,13 @@ namespace CountryService
     {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Name="ListOfLanguagesByCodeResponse", Namespace="http://www.oorsprong.org/websamples.countryinfo", Order=0)]
-        public CountryService.ListOfLanguagesByCodeResponseBody Body;
+        public CountryInfoService.ListOfLanguagesByCodeResponseBody Body;
         
         public ListOfLanguagesByCodeResponse()
         {
         }
         
-        public ListOfLanguagesByCodeResponse(CountryService.ListOfLanguagesByCodeResponseBody Body)
+        public ListOfLanguagesByCodeResponse(CountryInfoService.ListOfLanguagesByCodeResponseBody Body)
         {
             this.Body = Body;
         }
@@ -1821,13 +1821,13 @@ namespace CountryService
     {
         
         [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=0)]
-        public CountryService.tLanguage[] ListOfLanguagesByCodeResult;
+        public CountryInfoService.tLanguage[] ListOfLanguagesByCodeResult;
         
         public ListOfLanguagesByCodeResponseBody()
         {
         }
         
-        public ListOfLanguagesByCodeResponseBody(CountryService.tLanguage[] ListOfLanguagesByCodeResult)
+        public ListOfLanguagesByCodeResponseBody(CountryInfoService.tLanguage[] ListOfLanguagesByCodeResult)
         {
             this.ListOfLanguagesByCodeResult = ListOfLanguagesByCodeResult;
         }
@@ -1841,13 +1841,13 @@ namespace CountryService
     {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Name="LanguageName", Namespace="http://www.oorsprong.org/websamples.countryinfo", Order=0)]
-        public CountryService.LanguageNameRequestBody Body;
+        public CountryInfoService.LanguageNameRequestBody Body;
         
         public LanguageNameRequest()
         {
         }
         
-        public LanguageNameRequest(CountryService.LanguageNameRequestBody Body)
+        public LanguageNameRequest(CountryInfoService.LanguageNameRequestBody Body)
         {
             this.Body = Body;
         }
@@ -1881,13 +1881,13 @@ namespace CountryService
     {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Name="LanguageNameResponse", Namespace="http://www.oorsprong.org/websamples.countryinfo", Order=0)]
-        public CountryService.LanguageNameResponseBody Body;
+        public CountryInfoService.LanguageNameResponseBody Body;
         
         public LanguageNameResponse()
         {
         }
         
-        public LanguageNameResponse(CountryService.LanguageNameResponseBody Body)
+        public LanguageNameResponse(CountryInfoService.LanguageNameResponseBody Body)
         {
             this.Body = Body;
         }
@@ -1921,13 +1921,13 @@ namespace CountryService
     {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Name="LanguageISOCode", Namespace="http://www.oorsprong.org/websamples.countryinfo", Order=0)]
-        public CountryService.LanguageISOCodeRequestBody Body;
+        public CountryInfoService.LanguageISOCodeRequestBody Body;
         
         public LanguageISOCodeRequest()
         {
         }
         
-        public LanguageISOCodeRequest(CountryService.LanguageISOCodeRequestBody Body)
+        public LanguageISOCodeRequest(CountryInfoService.LanguageISOCodeRequestBody Body)
         {
             this.Body = Body;
         }
@@ -1961,13 +1961,13 @@ namespace CountryService
     {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Name="LanguageISOCodeResponse", Namespace="http://www.oorsprong.org/websamples.countryinfo", Order=0)]
-        public CountryService.LanguageISOCodeResponseBody Body;
+        public CountryInfoService.LanguageISOCodeResponseBody Body;
         
         public LanguageISOCodeResponse()
         {
         }
         
-        public LanguageISOCodeResponse(CountryService.LanguageISOCodeResponseBody Body)
+        public LanguageISOCodeResponse(CountryInfoService.LanguageISOCodeResponseBody Body)
         {
             this.Body = Body;
         }
@@ -1994,13 +1994,13 @@ namespace CountryService
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
-    public interface CountryInfoServiceSoapTypeChannel : CountryService.CountryInfoServiceSoapType, System.ServiceModel.IClientChannel
+    public interface CountryInfoServiceSoapTypeChannel : CountryInfoService.CountryInfoServiceSoapType, System.ServiceModel.IClientChannel
     {
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
-    public partial class CountryInfoServiceSoapTypeClient : System.ServiceModel.ClientBase<CountryService.CountryInfoServiceSoapType>, CountryService.CountryInfoServiceSoapType
+    public partial class CountryInfoServiceSoapTypeClient : System.ServiceModel.ClientBase<CountryInfoService.CountryInfoServiceSoapType>, CountryInfoService.CountryInfoServiceSoapType
     {
         
         /// <summary>
@@ -2035,293 +2035,289 @@ namespace CountryService
                 base(binding, remoteAddress)
         {
         }
-
-        public CountryInfoServiceSoapTypeClient()
-        {
-        }
-
+        
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<CountryService.ListOfContinentsByNameResponse> CountryService.CountryInfoServiceSoapType.ListOfContinentsByNameAsync(CountryService.ListOfContinentsByNameRequest request)
+        System.Threading.Tasks.Task<CountryInfoService.ListOfContinentsByNameResponse> CountryInfoService.CountryInfoServiceSoapType.ListOfContinentsByNameAsync(CountryInfoService.ListOfContinentsByNameRequest request)
         {
             return base.Channel.ListOfContinentsByNameAsync(request);
         }
         
-        public System.Threading.Tasks.Task<CountryService.ListOfContinentsByNameResponse> ListOfContinentsByNameAsync()
+        public System.Threading.Tasks.Task<CountryInfoService.ListOfContinentsByNameResponse> ListOfContinentsByNameAsync()
         {
-            CountryService.ListOfContinentsByNameRequest inValue = new CountryService.ListOfContinentsByNameRequest();
-            inValue.Body = new CountryService.ListOfContinentsByNameRequestBody();
-            return ((CountryService.CountryInfoServiceSoapType)(this)).ListOfContinentsByNameAsync(inValue);
+            CountryInfoService.ListOfContinentsByNameRequest inValue = new CountryInfoService.ListOfContinentsByNameRequest();
+            inValue.Body = new CountryInfoService.ListOfContinentsByNameRequestBody();
+            return ((CountryInfoService.CountryInfoServiceSoapType)(this)).ListOfContinentsByNameAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<CountryService.ListOfContinentsByCodeResponse> CountryService.CountryInfoServiceSoapType.ListOfContinentsByCodeAsync(CountryService.ListOfContinentsByCodeRequest request)
+        System.Threading.Tasks.Task<CountryInfoService.ListOfContinentsByCodeResponse> CountryInfoService.CountryInfoServiceSoapType.ListOfContinentsByCodeAsync(CountryInfoService.ListOfContinentsByCodeRequest request)
         {
             return base.Channel.ListOfContinentsByCodeAsync(request);
         }
         
-        public System.Threading.Tasks.Task<CountryService.ListOfContinentsByCodeResponse> ListOfContinentsByCodeAsync()
+        public System.Threading.Tasks.Task<CountryInfoService.ListOfContinentsByCodeResponse> ListOfContinentsByCodeAsync()
         {
-            CountryService.ListOfContinentsByCodeRequest inValue = new CountryService.ListOfContinentsByCodeRequest();
-            inValue.Body = new CountryService.ListOfContinentsByCodeRequestBody();
-            return ((CountryService.CountryInfoServiceSoapType)(this)).ListOfContinentsByCodeAsync(inValue);
+            CountryInfoService.ListOfContinentsByCodeRequest inValue = new CountryInfoService.ListOfContinentsByCodeRequest();
+            inValue.Body = new CountryInfoService.ListOfContinentsByCodeRequestBody();
+            return ((CountryInfoService.CountryInfoServiceSoapType)(this)).ListOfContinentsByCodeAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<CountryService.ListOfCurrenciesByNameResponse> CountryService.CountryInfoServiceSoapType.ListOfCurrenciesByNameAsync(CountryService.ListOfCurrenciesByNameRequest request)
+        System.Threading.Tasks.Task<CountryInfoService.ListOfCurrenciesByNameResponse> CountryInfoService.CountryInfoServiceSoapType.ListOfCurrenciesByNameAsync(CountryInfoService.ListOfCurrenciesByNameRequest request)
         {
             return base.Channel.ListOfCurrenciesByNameAsync(request);
         }
         
-        public System.Threading.Tasks.Task<CountryService.ListOfCurrenciesByNameResponse> ListOfCurrenciesByNameAsync()
+        public System.Threading.Tasks.Task<CountryInfoService.ListOfCurrenciesByNameResponse> ListOfCurrenciesByNameAsync()
         {
-            CountryService.ListOfCurrenciesByNameRequest inValue = new CountryService.ListOfCurrenciesByNameRequest();
-            inValue.Body = new CountryService.ListOfCurrenciesByNameRequestBody();
-            return ((CountryService.CountryInfoServiceSoapType)(this)).ListOfCurrenciesByNameAsync(inValue);
+            CountryInfoService.ListOfCurrenciesByNameRequest inValue = new CountryInfoService.ListOfCurrenciesByNameRequest();
+            inValue.Body = new CountryInfoService.ListOfCurrenciesByNameRequestBody();
+            return ((CountryInfoService.CountryInfoServiceSoapType)(this)).ListOfCurrenciesByNameAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<CountryService.ListOfCurrenciesByCodeResponse> CountryService.CountryInfoServiceSoapType.ListOfCurrenciesByCodeAsync(CountryService.ListOfCurrenciesByCodeRequest request)
+        System.Threading.Tasks.Task<CountryInfoService.ListOfCurrenciesByCodeResponse> CountryInfoService.CountryInfoServiceSoapType.ListOfCurrenciesByCodeAsync(CountryInfoService.ListOfCurrenciesByCodeRequest request)
         {
             return base.Channel.ListOfCurrenciesByCodeAsync(request);
         }
         
-        public System.Threading.Tasks.Task<CountryService.ListOfCurrenciesByCodeResponse> ListOfCurrenciesByCodeAsync()
+        public System.Threading.Tasks.Task<CountryInfoService.ListOfCurrenciesByCodeResponse> ListOfCurrenciesByCodeAsync()
         {
-            CountryService.ListOfCurrenciesByCodeRequest inValue = new CountryService.ListOfCurrenciesByCodeRequest();
-            inValue.Body = new CountryService.ListOfCurrenciesByCodeRequestBody();
-            return ((CountryService.CountryInfoServiceSoapType)(this)).ListOfCurrenciesByCodeAsync(inValue);
+            CountryInfoService.ListOfCurrenciesByCodeRequest inValue = new CountryInfoService.ListOfCurrenciesByCodeRequest();
+            inValue.Body = new CountryInfoService.ListOfCurrenciesByCodeRequestBody();
+            return ((CountryInfoService.CountryInfoServiceSoapType)(this)).ListOfCurrenciesByCodeAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<CountryService.CurrencyNameResponse> CountryService.CountryInfoServiceSoapType.CurrencyNameAsync(CountryService.CurrencyNameRequest request)
+        System.Threading.Tasks.Task<CountryInfoService.CurrencyNameResponse> CountryInfoService.CountryInfoServiceSoapType.CurrencyNameAsync(CountryInfoService.CurrencyNameRequest request)
         {
             return base.Channel.CurrencyNameAsync(request);
         }
         
-        public System.Threading.Tasks.Task<CountryService.CurrencyNameResponse> CurrencyNameAsync(string sCurrencyISOCode)
+        public System.Threading.Tasks.Task<CountryInfoService.CurrencyNameResponse> CurrencyNameAsync(string sCurrencyISOCode)
         {
-            CountryService.CurrencyNameRequest inValue = new CountryService.CurrencyNameRequest();
-            inValue.Body = new CountryService.CurrencyNameRequestBody();
+            CountryInfoService.CurrencyNameRequest inValue = new CountryInfoService.CurrencyNameRequest();
+            inValue.Body = new CountryInfoService.CurrencyNameRequestBody();
             inValue.Body.sCurrencyISOCode = sCurrencyISOCode;
-            return ((CountryService.CountryInfoServiceSoapType)(this)).CurrencyNameAsync(inValue);
+            return ((CountryInfoService.CountryInfoServiceSoapType)(this)).CurrencyNameAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<CountryService.ListOfCountryNamesByCodeResponse> CountryService.CountryInfoServiceSoapType.ListOfCountryNamesByCodeAsync(CountryService.ListOfCountryNamesByCodeRequest request)
+        System.Threading.Tasks.Task<CountryInfoService.ListOfCountryNamesByCodeResponse> CountryInfoService.CountryInfoServiceSoapType.ListOfCountryNamesByCodeAsync(CountryInfoService.ListOfCountryNamesByCodeRequest request)
         {
             return base.Channel.ListOfCountryNamesByCodeAsync(request);
         }
         
-        public System.Threading.Tasks.Task<CountryService.ListOfCountryNamesByCodeResponse> ListOfCountryNamesByCodeAsync()
+        public System.Threading.Tasks.Task<CountryInfoService.ListOfCountryNamesByCodeResponse> ListOfCountryNamesByCodeAsync()
         {
-            CountryService.ListOfCountryNamesByCodeRequest inValue = new CountryService.ListOfCountryNamesByCodeRequest();
-            inValue.Body = new CountryService.ListOfCountryNamesByCodeRequestBody();
-            return ((CountryService.CountryInfoServiceSoapType)(this)).ListOfCountryNamesByCodeAsync(inValue);
+            CountryInfoService.ListOfCountryNamesByCodeRequest inValue = new CountryInfoService.ListOfCountryNamesByCodeRequest();
+            inValue.Body = new CountryInfoService.ListOfCountryNamesByCodeRequestBody();
+            return ((CountryInfoService.CountryInfoServiceSoapType)(this)).ListOfCountryNamesByCodeAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<CountryService.ListOfCountryNamesByNameResponse> CountryService.CountryInfoServiceSoapType.ListOfCountryNamesByNameAsync(CountryService.ListOfCountryNamesByNameRequest request)
+        System.Threading.Tasks.Task<CountryInfoService.ListOfCountryNamesByNameResponse> CountryInfoService.CountryInfoServiceSoapType.ListOfCountryNamesByNameAsync(CountryInfoService.ListOfCountryNamesByNameRequest request)
         {
             return base.Channel.ListOfCountryNamesByNameAsync(request);
         }
         
-        public System.Threading.Tasks.Task<CountryService.ListOfCountryNamesByNameResponse> ListOfCountryNamesByNameAsync()
+        public System.Threading.Tasks.Task<CountryInfoService.ListOfCountryNamesByNameResponse> ListOfCountryNamesByNameAsync()
         {
-            CountryService.ListOfCountryNamesByNameRequest inValue = new CountryService.ListOfCountryNamesByNameRequest();
-            inValue.Body = new CountryService.ListOfCountryNamesByNameRequestBody();
-            return ((CountryService.CountryInfoServiceSoapType)(this)).ListOfCountryNamesByNameAsync(inValue);
+            CountryInfoService.ListOfCountryNamesByNameRequest inValue = new CountryInfoService.ListOfCountryNamesByNameRequest();
+            inValue.Body = new CountryInfoService.ListOfCountryNamesByNameRequestBody();
+            return ((CountryInfoService.CountryInfoServiceSoapType)(this)).ListOfCountryNamesByNameAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<CountryService.ListOfCountryNamesGroupedByContinentResponse> CountryService.CountryInfoServiceSoapType.ListOfCountryNamesGroupedByContinentAsync(CountryService.ListOfCountryNamesGroupedByContinentRequest request)
+        System.Threading.Tasks.Task<CountryInfoService.ListOfCountryNamesGroupedByContinentResponse> CountryInfoService.CountryInfoServiceSoapType.ListOfCountryNamesGroupedByContinentAsync(CountryInfoService.ListOfCountryNamesGroupedByContinentRequest request)
         {
             return base.Channel.ListOfCountryNamesGroupedByContinentAsync(request);
         }
         
-        public System.Threading.Tasks.Task<CountryService.ListOfCountryNamesGroupedByContinentResponse> ListOfCountryNamesGroupedByContinentAsync()
+        public System.Threading.Tasks.Task<CountryInfoService.ListOfCountryNamesGroupedByContinentResponse> ListOfCountryNamesGroupedByContinentAsync()
         {
-            CountryService.ListOfCountryNamesGroupedByContinentRequest inValue = new CountryService.ListOfCountryNamesGroupedByContinentRequest();
-            inValue.Body = new CountryService.ListOfCountryNamesGroupedByContinentRequestBody();
-            return ((CountryService.CountryInfoServiceSoapType)(this)).ListOfCountryNamesGroupedByContinentAsync(inValue);
+            CountryInfoService.ListOfCountryNamesGroupedByContinentRequest inValue = new CountryInfoService.ListOfCountryNamesGroupedByContinentRequest();
+            inValue.Body = new CountryInfoService.ListOfCountryNamesGroupedByContinentRequestBody();
+            return ((CountryInfoService.CountryInfoServiceSoapType)(this)).ListOfCountryNamesGroupedByContinentAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<CountryService.CountryNameResponse> CountryService.CountryInfoServiceSoapType.CountryNameAsync(CountryService.CountryNameRequest request)
+        System.Threading.Tasks.Task<CountryInfoService.CountryNameResponse> CountryInfoService.CountryInfoServiceSoapType.CountryNameAsync(CountryInfoService.CountryNameRequest request)
         {
             return base.Channel.CountryNameAsync(request);
         }
         
-        public System.Threading.Tasks.Task<CountryService.CountryNameResponse> CountryNameAsync(string sCountryISOCode)
+        public System.Threading.Tasks.Task<CountryInfoService.CountryNameResponse> CountryNameAsync(string sCountryISOCode)
         {
-            CountryService.CountryNameRequest inValue = new CountryService.CountryNameRequest();
-            inValue.Body = new CountryService.CountryNameRequestBody();
+            CountryInfoService.CountryNameRequest inValue = new CountryInfoService.CountryNameRequest();
+            inValue.Body = new CountryInfoService.CountryNameRequestBody();
             inValue.Body.sCountryISOCode = sCountryISOCode;
-            return ((CountryService.CountryInfoServiceSoapType)(this)).CountryNameAsync(inValue);
+            return ((CountryInfoService.CountryInfoServiceSoapType)(this)).CountryNameAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<CountryService.CountryISOCodeResponse> CountryService.CountryInfoServiceSoapType.CountryISOCodeAsync(CountryService.CountryISOCodeRequest request)
+        System.Threading.Tasks.Task<CountryInfoService.CountryISOCodeResponse> CountryInfoService.CountryInfoServiceSoapType.CountryISOCodeAsync(CountryInfoService.CountryISOCodeRequest request)
         {
             return base.Channel.CountryISOCodeAsync(request);
         }
         
-        public System.Threading.Tasks.Task<CountryService.CountryISOCodeResponse> CountryISOCodeAsync(string sCountryName)
+        public System.Threading.Tasks.Task<CountryInfoService.CountryISOCodeResponse> CountryISOCodeAsync(string sCountryName)
         {
-            CountryService.CountryISOCodeRequest inValue = new CountryService.CountryISOCodeRequest();
-            inValue.Body = new CountryService.CountryISOCodeRequestBody();
+            CountryInfoService.CountryISOCodeRequest inValue = new CountryInfoService.CountryISOCodeRequest();
+            inValue.Body = new CountryInfoService.CountryISOCodeRequestBody();
             inValue.Body.sCountryName = sCountryName;
-            return ((CountryService.CountryInfoServiceSoapType)(this)).CountryISOCodeAsync(inValue);
+            return ((CountryInfoService.CountryInfoServiceSoapType)(this)).CountryISOCodeAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<CountryService.CapitalCityResponse> CountryService.CountryInfoServiceSoapType.CapitalCityAsync(CountryService.CapitalCityRequest request)
+        System.Threading.Tasks.Task<CountryInfoService.CapitalCityResponse> CountryInfoService.CountryInfoServiceSoapType.CapitalCityAsync(CountryInfoService.CapitalCityRequest request)
         {
             return base.Channel.CapitalCityAsync(request);
         }
         
-        public System.Threading.Tasks.Task<CountryService.CapitalCityResponse> CapitalCityAsync(string sCountryISOCode)
+        public System.Threading.Tasks.Task<CountryInfoService.CapitalCityResponse> CapitalCityAsync(string sCountryISOCode)
         {
-            CountryService.CapitalCityRequest inValue = new CountryService.CapitalCityRequest();
-            inValue.Body = new CountryService.CapitalCityRequestBody();
+            CountryInfoService.CapitalCityRequest inValue = new CountryInfoService.CapitalCityRequest();
+            inValue.Body = new CountryInfoService.CapitalCityRequestBody();
             inValue.Body.sCountryISOCode = sCountryISOCode;
-            return ((CountryService.CountryInfoServiceSoapType)(this)).CapitalCityAsync(inValue);
+            return ((CountryInfoService.CountryInfoServiceSoapType)(this)).CapitalCityAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<CountryService.CountryCurrencyResponse> CountryService.CountryInfoServiceSoapType.CountryCurrencyAsync(CountryService.CountryCurrencyRequest request)
+        System.Threading.Tasks.Task<CountryInfoService.CountryCurrencyResponse> CountryInfoService.CountryInfoServiceSoapType.CountryCurrencyAsync(CountryInfoService.CountryCurrencyRequest request)
         {
             return base.Channel.CountryCurrencyAsync(request);
         }
         
-        public System.Threading.Tasks.Task<CountryService.CountryCurrencyResponse> CountryCurrencyAsync(string sCountryISOCode)
+        public System.Threading.Tasks.Task<CountryInfoService.CountryCurrencyResponse> CountryCurrencyAsync(string sCountryISOCode)
         {
-            CountryService.CountryCurrencyRequest inValue = new CountryService.CountryCurrencyRequest();
-            inValue.Body = new CountryService.CountryCurrencyRequestBody();
+            CountryInfoService.CountryCurrencyRequest inValue = new CountryInfoService.CountryCurrencyRequest();
+            inValue.Body = new CountryInfoService.CountryCurrencyRequestBody();
             inValue.Body.sCountryISOCode = sCountryISOCode;
-            return ((CountryService.CountryInfoServiceSoapType)(this)).CountryCurrencyAsync(inValue);
+            return ((CountryInfoService.CountryInfoServiceSoapType)(this)).CountryCurrencyAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<CountryService.CountryFlagResponse> CountryService.CountryInfoServiceSoapType.CountryFlagAsync(CountryService.CountryFlagRequest request)
+        System.Threading.Tasks.Task<CountryInfoService.CountryFlagResponse> CountryInfoService.CountryInfoServiceSoapType.CountryFlagAsync(CountryInfoService.CountryFlagRequest request)
         {
             return base.Channel.CountryFlagAsync(request);
         }
         
-        public System.Threading.Tasks.Task<CountryService.CountryFlagResponse> CountryFlagAsync(string sCountryISOCode)
+        public System.Threading.Tasks.Task<CountryInfoService.CountryFlagResponse> CountryFlagAsync(string sCountryISOCode)
         {
-            CountryService.CountryFlagRequest inValue = new CountryService.CountryFlagRequest();
-            inValue.Body = new CountryService.CountryFlagRequestBody();
+            CountryInfoService.CountryFlagRequest inValue = new CountryInfoService.CountryFlagRequest();
+            inValue.Body = new CountryInfoService.CountryFlagRequestBody();
             inValue.Body.sCountryISOCode = sCountryISOCode;
-            return ((CountryService.CountryInfoServiceSoapType)(this)).CountryFlagAsync(inValue);
+            return ((CountryInfoService.CountryInfoServiceSoapType)(this)).CountryFlagAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<CountryService.CountryIntPhoneCodeResponse> CountryService.CountryInfoServiceSoapType.CountryIntPhoneCodeAsync(CountryService.CountryIntPhoneCodeRequest request)
+        System.Threading.Tasks.Task<CountryInfoService.CountryIntPhoneCodeResponse> CountryInfoService.CountryInfoServiceSoapType.CountryIntPhoneCodeAsync(CountryInfoService.CountryIntPhoneCodeRequest request)
         {
             return base.Channel.CountryIntPhoneCodeAsync(request);
         }
         
-        public System.Threading.Tasks.Task<CountryService.CountryIntPhoneCodeResponse> CountryIntPhoneCodeAsync(string sCountryISOCode)
+        public System.Threading.Tasks.Task<CountryInfoService.CountryIntPhoneCodeResponse> CountryIntPhoneCodeAsync(string sCountryISOCode)
         {
-            CountryService.CountryIntPhoneCodeRequest inValue = new CountryService.CountryIntPhoneCodeRequest();
-            inValue.Body = new CountryService.CountryIntPhoneCodeRequestBody();
+            CountryInfoService.CountryIntPhoneCodeRequest inValue = new CountryInfoService.CountryIntPhoneCodeRequest();
+            inValue.Body = new CountryInfoService.CountryIntPhoneCodeRequestBody();
             inValue.Body.sCountryISOCode = sCountryISOCode;
-            return ((CountryService.CountryInfoServiceSoapType)(this)).CountryIntPhoneCodeAsync(inValue);
+            return ((CountryInfoService.CountryInfoServiceSoapType)(this)).CountryIntPhoneCodeAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<CountryService.FullCountryInfoResponse> CountryService.CountryInfoServiceSoapType.FullCountryInfoAsync(CountryService.FullCountryInfoRequest request)
+        System.Threading.Tasks.Task<CountryInfoService.FullCountryInfoResponse> CountryInfoService.CountryInfoServiceSoapType.FullCountryInfoAsync(CountryInfoService.FullCountryInfoRequest request)
         {
             return base.Channel.FullCountryInfoAsync(request);
         }
         
-        public System.Threading.Tasks.Task<CountryService.FullCountryInfoResponse> FullCountryInfoAsync(string sCountryISOCode)
+        public System.Threading.Tasks.Task<CountryInfoService.FullCountryInfoResponse> FullCountryInfoAsync(string sCountryISOCode)
         {
-            CountryService.FullCountryInfoRequest inValue = new CountryService.FullCountryInfoRequest();
-            inValue.Body = new CountryService.FullCountryInfoRequestBody();
+            CountryInfoService.FullCountryInfoRequest inValue = new CountryInfoService.FullCountryInfoRequest();
+            inValue.Body = new CountryInfoService.FullCountryInfoRequestBody();
             inValue.Body.sCountryISOCode = sCountryISOCode;
-            return ((CountryService.CountryInfoServiceSoapType)(this)).FullCountryInfoAsync(inValue);
+            return ((CountryInfoService.CountryInfoServiceSoapType)(this)).FullCountryInfoAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<CountryService.FullCountryInfoAllCountriesResponse> CountryService.CountryInfoServiceSoapType.FullCountryInfoAllCountriesAsync(CountryService.FullCountryInfoAllCountriesRequest request)
+        System.Threading.Tasks.Task<CountryInfoService.FullCountryInfoAllCountriesResponse> CountryInfoService.CountryInfoServiceSoapType.FullCountryInfoAllCountriesAsync(CountryInfoService.FullCountryInfoAllCountriesRequest request)
         {
             return base.Channel.FullCountryInfoAllCountriesAsync(request);
         }
         
-        public System.Threading.Tasks.Task<CountryService.FullCountryInfoAllCountriesResponse> FullCountryInfoAllCountriesAsync()
+        public System.Threading.Tasks.Task<CountryInfoService.FullCountryInfoAllCountriesResponse> FullCountryInfoAllCountriesAsync()
         {
-            CountryService.FullCountryInfoAllCountriesRequest inValue = new CountryService.FullCountryInfoAllCountriesRequest();
-            inValue.Body = new CountryService.FullCountryInfoAllCountriesRequestBody();
-            return ((CountryService.CountryInfoServiceSoapType)(this)).FullCountryInfoAllCountriesAsync(inValue);
+            CountryInfoService.FullCountryInfoAllCountriesRequest inValue = new CountryInfoService.FullCountryInfoAllCountriesRequest();
+            inValue.Body = new CountryInfoService.FullCountryInfoAllCountriesRequestBody();
+            return ((CountryInfoService.CountryInfoServiceSoapType)(this)).FullCountryInfoAllCountriesAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<CountryService.CountriesUsingCurrencyResponse> CountryService.CountryInfoServiceSoapType.CountriesUsingCurrencyAsync(CountryService.CountriesUsingCurrencyRequest request)
+        System.Threading.Tasks.Task<CountryInfoService.CountriesUsingCurrencyResponse> CountryInfoService.CountryInfoServiceSoapType.CountriesUsingCurrencyAsync(CountryInfoService.CountriesUsingCurrencyRequest request)
         {
             return base.Channel.CountriesUsingCurrencyAsync(request);
         }
         
-        public System.Threading.Tasks.Task<CountryService.CountriesUsingCurrencyResponse> CountriesUsingCurrencyAsync(string sISOCurrencyCode)
+        public System.Threading.Tasks.Task<CountryInfoService.CountriesUsingCurrencyResponse> CountriesUsingCurrencyAsync(string sISOCurrencyCode)
         {
-            CountryService.CountriesUsingCurrencyRequest inValue = new CountryService.CountriesUsingCurrencyRequest();
-            inValue.Body = new CountryService.CountriesUsingCurrencyRequestBody();
+            CountryInfoService.CountriesUsingCurrencyRequest inValue = new CountryInfoService.CountriesUsingCurrencyRequest();
+            inValue.Body = new CountryInfoService.CountriesUsingCurrencyRequestBody();
             inValue.Body.sISOCurrencyCode = sISOCurrencyCode;
-            return ((CountryService.CountryInfoServiceSoapType)(this)).CountriesUsingCurrencyAsync(inValue);
+            return ((CountryInfoService.CountryInfoServiceSoapType)(this)).CountriesUsingCurrencyAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<CountryService.ListOfLanguagesByNameResponse> CountryService.CountryInfoServiceSoapType.ListOfLanguagesByNameAsync(CountryService.ListOfLanguagesByNameRequest request)
+        System.Threading.Tasks.Task<CountryInfoService.ListOfLanguagesByNameResponse> CountryInfoService.CountryInfoServiceSoapType.ListOfLanguagesByNameAsync(CountryInfoService.ListOfLanguagesByNameRequest request)
         {
             return base.Channel.ListOfLanguagesByNameAsync(request);
         }
         
-        public System.Threading.Tasks.Task<CountryService.ListOfLanguagesByNameResponse> ListOfLanguagesByNameAsync()
+        public System.Threading.Tasks.Task<CountryInfoService.ListOfLanguagesByNameResponse> ListOfLanguagesByNameAsync()
         {
-            CountryService.ListOfLanguagesByNameRequest inValue = new CountryService.ListOfLanguagesByNameRequest();
-            inValue.Body = new CountryService.ListOfLanguagesByNameRequestBody();
-            return ((CountryService.CountryInfoServiceSoapType)(this)).ListOfLanguagesByNameAsync(inValue);
+            CountryInfoService.ListOfLanguagesByNameRequest inValue = new CountryInfoService.ListOfLanguagesByNameRequest();
+            inValue.Body = new CountryInfoService.ListOfLanguagesByNameRequestBody();
+            return ((CountryInfoService.CountryInfoServiceSoapType)(this)).ListOfLanguagesByNameAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<CountryService.ListOfLanguagesByCodeResponse> CountryService.CountryInfoServiceSoapType.ListOfLanguagesByCodeAsync(CountryService.ListOfLanguagesByCodeRequest request)
+        System.Threading.Tasks.Task<CountryInfoService.ListOfLanguagesByCodeResponse> CountryInfoService.CountryInfoServiceSoapType.ListOfLanguagesByCodeAsync(CountryInfoService.ListOfLanguagesByCodeRequest request)
         {
             return base.Channel.ListOfLanguagesByCodeAsync(request);
         }
         
-        public System.Threading.Tasks.Task<CountryService.ListOfLanguagesByCodeResponse> ListOfLanguagesByCodeAsync()
+        public System.Threading.Tasks.Task<CountryInfoService.ListOfLanguagesByCodeResponse> ListOfLanguagesByCodeAsync()
         {
-            CountryService.ListOfLanguagesByCodeRequest inValue = new CountryService.ListOfLanguagesByCodeRequest();
-            inValue.Body = new CountryService.ListOfLanguagesByCodeRequestBody();
-            return ((CountryService.CountryInfoServiceSoapType)(this)).ListOfLanguagesByCodeAsync(inValue);
+            CountryInfoService.ListOfLanguagesByCodeRequest inValue = new CountryInfoService.ListOfLanguagesByCodeRequest();
+            inValue.Body = new CountryInfoService.ListOfLanguagesByCodeRequestBody();
+            return ((CountryInfoService.CountryInfoServiceSoapType)(this)).ListOfLanguagesByCodeAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<CountryService.LanguageNameResponse> CountryService.CountryInfoServiceSoapType.LanguageNameAsync(CountryService.LanguageNameRequest request)
+        System.Threading.Tasks.Task<CountryInfoService.LanguageNameResponse> CountryInfoService.CountryInfoServiceSoapType.LanguageNameAsync(CountryInfoService.LanguageNameRequest request)
         {
             return base.Channel.LanguageNameAsync(request);
         }
         
-        public System.Threading.Tasks.Task<CountryService.LanguageNameResponse> LanguageNameAsync(string sISOCode)
+        public System.Threading.Tasks.Task<CountryInfoService.LanguageNameResponse> LanguageNameAsync(string sISOCode)
         {
-            CountryService.LanguageNameRequest inValue = new CountryService.LanguageNameRequest();
-            inValue.Body = new CountryService.LanguageNameRequestBody();
+            CountryInfoService.LanguageNameRequest inValue = new CountryInfoService.LanguageNameRequest();
+            inValue.Body = new CountryInfoService.LanguageNameRequestBody();
             inValue.Body.sISOCode = sISOCode;
-            return ((CountryService.CountryInfoServiceSoapType)(this)).LanguageNameAsync(inValue);
+            return ((CountryInfoService.CountryInfoServiceSoapType)(this)).LanguageNameAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<CountryService.LanguageISOCodeResponse> CountryService.CountryInfoServiceSoapType.LanguageISOCodeAsync(CountryService.LanguageISOCodeRequest request)
+        System.Threading.Tasks.Task<CountryInfoService.LanguageISOCodeResponse> CountryInfoService.CountryInfoServiceSoapType.LanguageISOCodeAsync(CountryInfoService.LanguageISOCodeRequest request)
         {
             return base.Channel.LanguageISOCodeAsync(request);
         }
         
-        public System.Threading.Tasks.Task<CountryService.LanguageISOCodeResponse> LanguageISOCodeAsync(string sLanguageName)
+        public System.Threading.Tasks.Task<CountryInfoService.LanguageISOCodeResponse> LanguageISOCodeAsync(string sLanguageName)
         {
-            CountryService.LanguageISOCodeRequest inValue = new CountryService.LanguageISOCodeRequest();
-            inValue.Body = new CountryService.LanguageISOCodeRequestBody();
+            CountryInfoService.LanguageISOCodeRequest inValue = new CountryInfoService.LanguageISOCodeRequest();
+            inValue.Body = new CountryInfoService.LanguageISOCodeRequestBody();
             inValue.Body.sLanguageName = sLanguageName;
-            return ((CountryService.CountryInfoServiceSoapType)(this)).LanguageISOCodeAsync(inValue);
+            return ((CountryInfoService.CountryInfoServiceSoapType)(this)).LanguageISOCodeAsync(inValue);
         }
         
         public virtual System.Threading.Tasks.Task OpenAsync()

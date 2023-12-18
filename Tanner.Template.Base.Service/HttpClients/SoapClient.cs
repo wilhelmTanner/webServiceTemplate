@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Tanner.Template.Base.Service.Implementations
+namespace Tanner.Template.Base.Service.HttpClients
 {
-    internal class TemplateOracleService
+    internal class SoapClient
     {
     }
 }

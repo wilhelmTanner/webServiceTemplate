@@ -1,4 +1,8 @@
-﻿namespace Tanner.Template.Base.API.Controllers;
+﻿using Microsoft.AspNetCore.Http.Features;
+using Microsoft.IdentityModel.Xml;
+using Tanner.Template.Base.DataAccess;
+
+namespace Tanner.Template.Base.API.Controllers;
 
 /// <summary>
 /// Controlador BASE
@@ -35,6 +39,8 @@ public class CustomControllerBase : ControllerBase
     [NonAction]
     protected ActionResult<BaseObjectResponse<T>> CustomOk<T>(T element, string? message = null)
     {
+        var country = new CountryInfoService.tCountryInfo();
+
         string traceID = HttpContext.TraceIdentifier;
 
         if (element == null)
